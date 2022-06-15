@@ -1,4 +1,4 @@
-# ansible-k8s-docker-kubeadm.yml
+# ansible-k8s-docker-kubeadm
 
 #### 介绍
 一键部署k8s，kubeadm和docker版本的k8s集群，换rancher或者containerd其实也大同小异
