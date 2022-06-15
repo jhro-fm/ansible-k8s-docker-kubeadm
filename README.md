@@ -37,7 +37,7 @@ vim /etc/ansible/hosts:
 
 
 #### 使用说明
-1.将整个项目克隆下来 git clone git@
+1.将整个项目克隆下来 git clone git@github.com:20gu00/ansible-k8s-docker-kubeadm.git
 注意，放在你的/root目录下面，即效果是/root/ansible-k8s-docker-kubeadm/ansible-k8s-docker-kubeadm.yml
 
 2.ansible-playbook ansible-k8s-docker-kubeadm.yml
