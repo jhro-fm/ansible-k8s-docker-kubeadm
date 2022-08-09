@@ -38,9 +38,13 @@ vim /etc/ansible/hosts:
 
 #### 使用说明  
 1.将整个项目克隆下来 git clone git@github.com:20gu00/ansible-k8s-docker-kubeadm.git  
-注意，放在你的/root目录下面，即效果是/root/ansible-k8s-docker-kubeadm/ansible-k8s-docker-kubeadm.yml  
+注意，放在你的/root目录下面，即效果是/root/ansible-k8s-docker-kubeadm/ansible-k8s-docker-kubeadm.yml
 
-2.ansible-playbook ansible-k8s-docker-kubeadm.yml  
+2.将kubeadm.yaml,join-token两个文件中的master的ip地址改成自己的
+
+3.修改kube-flannel.yml中网卡名改成自己的，默认是ens33
+
+4.ansible-playbook ansible-k8s-docker-kubeadm.yml  
 
 
 附加：集群搭建起来了，但如果你的网速不好的话，集群可能还不能短时间内就是用，比如kube-system的coredns和flannel容器还在下载镜像中，需要等待一会，或者你可以describe查看下载中的镜像，手动docker pull下来，还有就是如果running了但较长时间还是0/1，你可以删除该pod，它会自动重建，一般都可以解决  
