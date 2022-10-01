@@ -37,7 +37,7 @@ vim /etc/ansible/hosts:
 
 
 #### 使用说明  
-1.将整个项目克隆下来 git clone git@github.com:20gu00/ansible-k8s-docker-kubeadm.git  
+1.将整个项目克隆下来  
 注意，放在你的/root目录下面，即效果是/root/ansible-k8s-docker-kubeadm/ansible-k8s-docker-kubeadm.yml
 
 2.将kubeadm.yaml,join-token两个文件中的master的ip地址改成自己的
